@@ -8,7 +8,7 @@ else:
     print("reprovado")
     print("direito a uma prova de recuperaçao")
     prov3 = int(input("nota recuperaçao: "))
-nota+=prov3
+    nota+=prov3
 if(nota/2 >=5):
     print("aprovado")
 else:

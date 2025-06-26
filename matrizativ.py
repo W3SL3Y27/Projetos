@@ -32,3 +32,29 @@ matriz = [
 
 for linha in range(3):
     print(matriz[linha][linha], end=", " if linha < 2 else "\n")
+
+#Exercicio 4
+
+pares = 0
+
+for l in matriz:
+    for c in l:
+        if c%2 == 0:
+            pares += 1
+
+print(f"numeros pares:",(pares))
+
+#Exercicio 5
+
+matriz = []
+
+for i in range(3):
+    linha = []
+    for j in range(3):
+        valor = int(input(f"Digite o número da posição [{i}][{j}]: "))
+        linha.append(valor)
+    matriz.append(linha)
+
+for i in range(3):
+    soma = sum(matriz[i])
+    print(f"Linha {i}: soma = {soma}")
